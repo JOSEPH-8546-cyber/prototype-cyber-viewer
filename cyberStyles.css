@@ -1,0 +1,67 @@
+/*Body Elements*/
+
+
+#update{
+  color: rgb(0, 181, 255);
+  background-color: rgb(0, 0, 0);
+  font-size: 15px;
+  margin: 15px;
+}
+
+/*Navbar elements*/
+
+/*Icons Conf.*/
+
+#symbolMain{
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+#sigin{
+    margin-left: 10%;
+    margin-top: 2px;
+    color: rgb(0, 0, 0);
+}
+ #help{
+     margin-left: 15%;
+     margin-top: 6px;
+     color: rgb(0, 0, 0);
+ }
+
+#login{
+    margin-left: 10%;
+    margin-top: 6px;
+    color: rgb(0, 0, 0);
+}
+
+#signOut{
+    margin-left: 10%;
+    margin-top: 6px;
+    color: rgb(0, 0, 0);
+}
+
+
+/*Elements of Footer*/
+
+/*Icons footer*/
+
+#footerIcon{
+    font-size: 30px;
+    padding: 5px;
+}
+
+
+
+/*Landing Page Elements*/
+
+
+
+/*
+imagenes aleatorias
+https://picsum.photos/1920/1200
+
+1- https://fondosmil.com/fondo/11112.jpg
+
+2- https://i.pinimg.com/originals/38/10/b3/3810b3d0436dfa7b7c5bdd336fc8834c.jpg
+
+*/
