@@ -52,6 +52,36 @@
 
 
 
+/* CSS of Home page cybe CyberViewer */
+
+
+/*
+ Body Elements
+*/
+
+#homePageBody {
+ background-image: url("https://fondosmil.com/fondo/12535.jpg");
+ color: #b91112;
+
+
+/*background-color: black;*/
+}
+
+
+#update_home {
+  margin-left: 90%;
+  color: rgb(0, 185, 255);
+  background-color: rgb(0, 0, 0);
+  font-size: 90%;
+
+
+}
+
+
+
+
+
+
 /*Landing Page Elements*/
 
 
