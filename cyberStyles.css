@@ -59,21 +59,33 @@
 home navbar elements
 */
 
-
-
-
-
-
-
+/* Reload buttom */
 #update_home {
-  margin-left: 1000px;
+  margin-left: 800px;
   color: rgb(49, 255, 255);
   background-color: rgb(0, 0, 0);
   font-size: 90%;
   box-shadow: 0 0 15px rgb(49, 255, 0), 0 0 25px rgb(49, 255, 0)
-
-
 }
+
+/* User icon of offcanvas */
+#user_icon {
+  font-size: 45px;
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 1);
+}
+
+/* header of offcanvas */
+#offcanvas_nav {
+  background-color: rgba(6, 41, 100, 1)
+}
+
+/* container of offcanvas that content user name and Email Address */
+#container_offcanvas {
+  color: rgba(255, 255, 255, 1)
+}
+
+
 
 /*
  Body Elements
