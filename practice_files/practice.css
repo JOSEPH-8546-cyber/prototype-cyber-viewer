@@ -11,3 +11,49 @@ body {
   font-size: 25px;
   font-style: italic;
 }
+
+/* properties: position */
+#ct {
+  position: static;
+  border: 3px solid rgba(155, 78, 95, 1);
+}
+
+#cy {
+  position: relative;
+  border: 3px solid rgba(55, 52, 255, 1);
+}
+
+#cu {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid rgba(255, 85, 78, 1);
+}
+
+#ci {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid rgba(255, 255, 87, 1);
+}
+
+#co {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid rgba(255, 87, 255, 1);
+}
+
+#cp {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: rgba(200, 65, 89, 1);
+  border: 2px solid rgba(54, 98, 78, 1);
+}
+
+/*prueba de javascript */
