@@ -24,6 +24,8 @@ style = () => {
 /* using boolean function */
 document.getElementById("cd").innerHTML = Boolean(10 < 20);
 
+
+
 /*note: you can show up this result without Boolean()
 like this = 10 < 20 */
 
@@ -116,5 +118,74 @@ insert2 = () => {
 
 
 
+/* Condicional Ternary */
+insert4 = () => {
+  let years = document.getElementById("cl").value;
+  let available = (cl < 18) ? "Too young" : "Old enough";
+  document.getElementById("cz").innerHTML = available + ' you can enter.'
+}
 
-/*             */
+/* Operador coalescente nulo (??): el busca el primer valor null o undefined y lo muestra y sini pasa a siguiente */
+let name = ' ';
+let name2 = null;
+let lk = "missing";
+let result = name2 ?? lk ??  name;
+
+document.getElementById("cx").innerHTML = "The name is " + lk || name2 || name;
+
+
+/*
+♦ if and else
+
+*/
+
+/* Using if and else */
+const time = new Date().getHours();
+
+let greeting;
+  if (time < 10) {
+    greeting = "Good Morning, Mr White";
+  } else if (time < 20) {
+    greeting = "Good Day, Mr White";
+  } else {
+    greeting = "Good Evening,  Mr White";
+  }
+
+/*
+♠ switch
+ */
+
+/* using switch to get day of the week */
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+  break;
+
+  case 1:
+    day = "Monday";
+  break;
+
+  case 2:
+    day = "Tuesday";
+  break;
+
+  case 3:
+    day = "Wednesday";
+  break;
+
+  case 4:
+    day = "Thursday";
+  break;
+
+  case 5:
+    day = "Friday";
+  break;
+
+  case 6:
+    day = "Saturday";
+}
+
+document.getElementById("cv").innerHTML = "Today is " + day;
+
+/*next: read more about the switch*/
