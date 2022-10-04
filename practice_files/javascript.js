@@ -64,17 +64,17 @@ var u = 8;
 let p = 5;
 
 document.getElementById("cf").innerHTML =
-(u < p && p > u) + "<br>" +
-(u > p && p < u);
+  (u < p && p > u) + "<br>" +
+  (u > p && p < u);
 
 /* using || */
 let i = 87;
 var t = 25;
 
 document.getElementById("cg").innerHTML =
-(i == 78 || t == 25) + "<br>" +
-(t == 87 || i == 87) +  "<br>" +
-(i == 74 || t == 5);
+  (i == 78 || t == 25) + "<br>" +
+  (t == 87 || i == 87) + "<br>" +
+  (i == 74 || t == 5);
 
 /* using ! */
 /*
@@ -129,7 +129,7 @@ insert4 = () => {
 let name = ' ';
 let name2 = null;
 let lk = "missing";
-let result = name2 ?? lk ??  name;
+let result = name2 ?? lk ?? name;
 
 document.getElementById("cx").innerHTML = "The name is " + lk || name2 || name;
 
@@ -143,13 +143,13 @@ document.getElementById("cx").innerHTML = "The name is " + lk || name2 || name;
 const time = new Date().getHours();
 
 let greeting;
-  if (time < 10) {
-    greeting = "Good Morning, Mr White";
-  } else if (time < 20) {
-    greeting = "Good Day, Mr White";
-  } else {
-    greeting = "Good Evening,  Mr White";
-  }
+if (time < 10) {
+  greeting = "Good Morning, Mr White";
+} else if (time < 20) {
+  greeting = "Good Day, Mr White";
+} else {
+  greeting = "Good Evening,  Mr White";
+}
 
 /*
 ♠ switch
@@ -160,27 +160,27 @@ let day;
 switch (new Date().getDay()) {
   case 0:
     day = "Sunday";
-  break;
+    break;
 
   case 1:
     day = "Monday";
-  break;
+    break;
 
   case 2:
     day = "Tuesday";
-  break;
+    break;
 
   case 3:
     day = "Wednesday";
-  break;
+    break;
 
   case 4:
     day = "Thursday";
-  break;
+    break;
 
   case 5:
     day = "Friday";
-  break;
+    break;
 
   case 6:
     day = "Saturday";
@@ -188,4 +188,76 @@ switch (new Date().getDay()) {
 
 document.getElementById("cv").innerHTML = "Today is " + day;
 
-/*next: read more about the switch*/
+/* usando los mismo casos en los bloques */
+let txt;
+switch (new Date().getDay()) {
+  case 4:
+  case 5:
+      txt = "Soon it is the weekend";
+    break;
+
+  case 0:
+  case 6:
+      txt = "It is Weekend";
+  break;
+
+
+  default:
+      txt = "Looking forward to the weekend";
+
+}
+
+document.getElementById("cb").innerHTML = "What day is today? " + txt;
+
+/*
+○ Loops o Bucles
+*/
+
+/* loop usando carros */
+const cars = ["BMW", "Volvo", "Ferrari", "Audi", "Ford", "Aston Martin"];
+
+let brand = "";
+
+for (let p = 0; p < cars.length; p++) {
+  brand += cars[p] + "<br>";
+}
+
+document.getElementById('cn').innerHTML = brand;
+
+
+/* Ciclo for in */
+
+/* sintaxis:
+            for (key in object) {
+            //code block to be executed
+          }
+
+ */
+
+//iterando un objeto usando for in
+const person2 =
+{
+  fname : "Joseph",
+  lastName : "Blanco Flores",
+  age : 21 + " " + "years old."
+};
+
+let y = "";
+for (let x in person2) {
+  y += person2[x] + " ";
+}
+console.log(typeof(y));
+
+document.getElementById('cm').innerHTML = y;
+
+//iterando una matriz o array con for in
+const numbers_5 = [10, 7, 85, 100, 854, 8.2];
+
+let num = "";
+for (x in numbers_5) {
+  num += numbers_5[x] + "<br>";
+}
+
+document.getElementById('xq').innerHTML = num;
+
+/* next topic: Bucle js para entrada.metodo for each() */
