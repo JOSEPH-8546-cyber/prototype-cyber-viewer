@@ -260,4 +260,50 @@ for (x in numbers_5) {
 
 document.getElementById('xq').innerHTML = num;
 
-/* next topic: Bucle js para entrada.metodo for each() */
+//bucle for each()
+const n = [45, 87, 98, 100];
+
+let r = "";
+n.forEach(my);
+document.getElementById("xw").innerHTML = r;
+
+function my(value, index, array) {
+  r += value + "<br>";
+}
+
+//bucle for of()
+
+//sobre una matiz[]
+const w2 = ['BMW', 'VOLVO', 'Cruicer', 'hola', 'Joseph'];
+
+let lolp = "";
+for (let l of w2) {
+  lolp += l + "<br>";
+}
+
+document.getElementById("xe").innerHTML = lolp;
+
+//sobre un String
+let lan = "Rust";
+
+let txt2 = "";
+for (let u of lan) {
+  txt2 += u + "<br>";
+}
+
+document.getElementById("xr").innerHTML = txt2;
+
+//Bucle while y do while
+
+//while
+let txt3 = "";
+let k = 0;
+
+while (k < 20) {
+  txt3 += "<br> The number is " + k;
+  k++;
+}
+
+document.getElementById("xt").innerHTML = txt3;
+
+/* next topic:  */
