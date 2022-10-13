@@ -306,4 +306,4 @@ while (k < 20) {
 
 document.getElementById("xt").innerHTML = txt3;
 
-/* next topic:  */
+/* next topic: do while */
