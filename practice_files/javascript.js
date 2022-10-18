@@ -306,4 +306,16 @@ while (k < 20) {
 
 document.getElementById("xt").innerHTML = txt3;
 
-/* next topic: do while */
+// do while
+let qw = "";
+let tr = 0;
+
+do {
+  qw += "<br> The number is " + tr;
+}
+while (tr <= 10);
+
+document.getElementById("xy").innerHTML = qw;
+
+
+/* next topic: */
